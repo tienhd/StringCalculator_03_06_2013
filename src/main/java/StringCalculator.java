@@ -75,4 +75,13 @@ public class StringCalculator {
         }
         return result;
     }
+
+    public String getMultiDefineDelimiter(String inputString) {
+        String result = "";
+        String getPattern = "(//)(.*)(\\n)(.*)";
+        if (inputString.matches(getPattern)) {
+
+        }
+        return result;
+    }
 }
