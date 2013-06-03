@@ -65,15 +65,21 @@ public class StringCalculatorTest {
         Assert.assertEquals(6, stringCalculator.Add("//[***]\n1***2***3"));
     }
 
+//    @Test
+//    public void TestGetDefineDelimiterModule() {
+//        StringCalculator scModule = new StringCalculator();
+//        Assert.assertEquals("***",scModule.getDefineDelimiter("//[***]\n1***2***3)"));
+//    }
+
     @Test
     public void TestGetDefineDelimiterModule() {
         StringCalculator scModule = new StringCalculator();
-        Assert.assertEquals("***",scModule.getDefineDelimiter("//[***]\n1***2***3)"));
+        Assert.assertEquals("[(***)(;)]",scModule.getDefineDelimiter("//[***][;]\n1***2;3"));
     }
-
     @Test
     public void TestWithMultiDefineDelimiter(){
         StringCalculator stringCalculator = new StringCalculator();
         Assert.assertEquals(6, stringCalculator.Add("//[***][;]\n1***2;3"));
     }
+
 }
