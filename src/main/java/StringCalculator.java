@@ -80,6 +80,13 @@ public class StringCalculator {
         String result = "";
         String getPattern = "(//)(.*)(\\n)(.*)";
         if (inputString.matches(getPattern)) {
+            System.out.println("MATCH MULTI");
+            String[] preDefine = inputString.split("\\n");
+            String tempDelimiter = preDefine[0];
+            tempDelimiter = tempDelimiter.replaceAll("\\[", " ");
+            tempDelimiter = tempDelimiter.replaceAll("\\]", " ");
+            String[] preDelimiter = tempDelimiter.split(" ");
+            System.out.println(preDelimiter);
 
         }
         return result;

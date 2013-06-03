@@ -74,7 +74,7 @@ public class StringCalculatorTest {
     @Test
     public void TestGetMultiDefineDelimiterModule() {
         StringCalculator scModule = new StringCalculator();
-        Assert.assertEquals("[(***)(;)]",scModule.getDefineDelimiter("//[***][;]\n1***2;3"));
+        Assert.assertEquals("[(***)(;)]",scModule.getMultiDefineDelimiter("//[***][;]\n1***2;3"));
     }
     @Test
     public void TestWithMultiDefineDelimiter(){
