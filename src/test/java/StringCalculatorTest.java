@@ -74,6 +74,6 @@ public class StringCalculatorTest {
     @Test
     public void TestWithMultiDefineDelimiter(){
         StringCalculator stringCalculator = new StringCalculator();
-        Assert.assertEquals(6, stringCalculator.Add("//[***]\n1***2;3"));
+        Assert.assertEquals(6, stringCalculator.Add("//[***][;]\n1***2;3"));
     }
 }
